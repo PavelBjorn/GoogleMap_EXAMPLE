@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- <android.support.design.widget.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/AppTheme.AppBarOverlay">
+
+         <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="?attr/colorPrimary"
+             app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+     </android.support.design.widget.AppBarLayout>
+ -->
+
+    <include layout="@layout/content_main" />
+
+    <FrameLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:foregroundGravity="center|top"
+        android:background="@drawable/bg_panel_gradient"
+        android:padding="16dp"
+        android:animateLayoutChanges="true">
+
+        <ImageButton
+            android:id="@+id/ib_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_input_delete" />
+
+        <ImageButton
+            android:id="@+id/ib_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_agenda" />
+
+    </FrameLayout>
+
+    <!-- <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="@dimen/fab_margin"
+         android:src="@android:drawable/ic_media_play" />-->
+
+</android.support.design.widget.CoordinatorLayout>
